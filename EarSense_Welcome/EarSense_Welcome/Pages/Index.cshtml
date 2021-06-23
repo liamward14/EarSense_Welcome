@@ -1,0 +1,183 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div asp-validation-summary="All" class="text-danger" id="validationSummary"></div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="d-flex justify-content-center">
+            <div class="alert text-white bg-gold" role="alert" style="width: 80%;">
+                <h1 class="alert-heading">Welcome!</h1>
+                <p style="font-size: large;">Our site is currently under construction. In the meantime, visit us at the address below, give us a call or send an email to schedule an appointment.</p>
+                <hr style="color: #fff;">
+                <h4><u>Our Address</u></h4>
+                <span style="font-size: large;">Located at <b>147 Hunter Street East</b>, Peterborough, Ontario, K9H 1G7</span>
+                <br /><br />
+                <h4><u>Our Contact Information</u></h4>
+                <span style="font-size: large;">(705)-243-7325</span><br />
+                <span style="font-size: large;">info@earsense.ca</span><br />
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
+</div>
+<!--Middle section of page-->
+<div class="row mb-2 mt-2 pl-3 pr-3">
+    <div class="card bg-primary border-0" style="color: #efefef;">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="text-center"><b>Stephen Ward</b></h3>
+                    <h3 class="text-center custom-primary-text"><b>Board Certified BC-HIS</b></h3>
+                    <p class="mt-3" style="font-size: x-large;">
+                        As an experienced hearing healthcare provider based in Peterborough,
+                        my patients appreciate the warmth, professional integrity, and open
+                        communication that define the Ear<i>Sense</i> clinic. I’m determined to help
+                        my patients understand their own hearing health so they can be well
+                        informed when making important health decisions.
+
+                    </p>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex justify-content-center">
+                        <img class="card-img" src="~/images/Stephen_Ward_23.png" style="border-radius: 5px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-5 mt-5">
+    <div class="col-7">
+        <div class="container-fluid text-center p-0" id="frontImg">
+            <img class="img-fluid" src="~/images/Front_Page.jpg" style="border-radius: 15px;" />
+        </div>
+    </div>
+    <div class="col-5 pl-0">
+        <div class="card bg-gold text-white" id="factsCard">
+            <div class="card-body">
+                <h2 class="text-center">Know the signs of hearing loss:</h2>
+                <hr />
+                <p class="large-font">
+                    1.	You get irritated at others for mumbling.<br />
+                    2.	You're having trouble following conversations.<br />
+                    3.	Talking on the phone is more challenging.<br />
+                    4.	Some sounds seem louder than normal.<br />
+                    5.	It's harder to carry on a conversation in a crowded room.<br />
+                    6.	Everyone is telling you to turn down the TV.<br />
+                    7.	You feel like you're getting clumsier.<br />
+                    8.	You don't remember things people tell you.<br />
+                    9.	You don't get jokes like you used to.<br />
+                    10.	You get distracted more easily.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-6">
+        <div class="card bg-gold" id="importantCard">
+            <div class="card-body">
+                <h1 class="text-center">Why is hearing so important?</h1>
+                <hr />
+                <p style="font-size: medium;">
+                    &emsp;As one of our most important senses, the ability to hear
+                    enables us to connect to the world for many very important,
+                    even vital, reasons.<br /><br />
+                    &emsp;Most importantly, hearing connects us to people enabling
+                    us to communicate in a way that none of our other senses can
+                    achieve. As the famed 20th-century activist and educator,
+                    Helen Keller, once said, “Blindness cuts us off from things,
+                    but deafness cuts us off from people”.<br /><br />
+                    &emsp;Although it’s true that the greater the hearing loss,
+                    the more severely our ability to communicate is affected,
+                    the impact on daily life of milder forms of hearing loss
+                    should never be underestimated or ignored.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="flex-fill" id="wordBlurbImg">
+            <img src="~/images/what is conductive hearing loss_Ward_2.jpg" class="img-fluid" style="border-radius: 20px;" />
+        </div>
+    </div>
+</div>
+
+<!-- 'Contact Us' Part of Page-->
+<div class="row pt-5 pl-2 pr-2 pb-4 mt-3" id="contactFormRow">
+    <div class="col-12">
+        <div class="card border-0" id="contactCard">
+            <div class="card-body bg-primary">
+                <div class="row text-center">
+                    <div class="col-6 xl-font p-0">
+                        <h1 class="custom-primary-text mb-4"><u>Contact Us</u></h1>
+                        <p class="text-white">147 Hunter Street East<br />Peterborough, Ontario, K9H 1G7</p>
+                        <p class="text-white m-4">info@earsense.ca</p>
+                        <p class="text-white m-4">(705)-243-7325</p>
+                    </div>
+                    <div class="col-6">
+                        <form class="form" asp-page-handler="Contact">
+                            <input class="form-control m-2 mb-3" asp-for="Form.Name" placeholder="Name" id="nameInput" />
+                            <div class="row">
+                                <div class="col-6">
+                                    <span for="nameInput" class="text-danger" asp-validation-for="Form.Name"></span>
+                                </div>
+                            </div>
+
+                            <input class="form-control m-2" asp-for="Form.Address" placeholder="Address" id="addressInput" />
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <input class="form-control m-2" asp-for="Form.Email" placeholder="Email" id="emailInput" />
+                                    <span for="emailInput" class="text-danger" asp-validation-for="Form.Email"></span>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-control m-2" asp-for="Form.Email" placeholder="Phone" id="phoneInput" />
+                                    <span for="phoneInput" class="text-danger" asp-validation-for="Form.Phone"></span>
+                                </div>
+                            </div>
+                            <input class="form-control m-2" asp-for="Form.Subject" placeholder="Subject" />
+                            <textarea class="form-control m-2 mt-3" asp-for="Form.Message" placeholder="Type your message here..." style="min-height: 185px; max-height: 185px;"></textarea>
+                            <div class="form-group row mt-2 ml-2 mb-2">
+                                <div class="col-lg-8 col-md-6 col-sm-4"></div>
+                                <div class="col-lg-4 col-md-6 col-sm-8">
+                                    <button class="btn bg-gold" type="submit" style="width: 100%;" id="contactSubmit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--<div id="map"></div>-->
+        <!--Added the embedded maps api for now (as opposed to javascript API) because it is free-->
+        <iframe style="width: 100%; border: solid; border-width: 2px;" , id="map"
+                height="450"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAI7XsadvttrwjVNd4hJRSgLpRg6GDyMCY&q=147+Hunter+Street+East,Peterborough+Ontario">
+        </iframe>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/Index.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //TODO
+        var validationhtml = $('#validationSummary').html();
+        console.log(validationhtml.indexOf('display:none'));
+        if (validationhtml.indexOf('display:none') == -1) { //validation shown
+            $(document).scrollTop($('#contactFormRow').position()["top"]);
+        }
+        //TODO: scroll to bottom based on error display
+    })
+</script>
+}

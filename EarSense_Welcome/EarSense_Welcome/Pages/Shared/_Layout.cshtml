@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] EarSense</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary box-shadow mb-3">
+            <div class="container d-flex justify-content-center">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">
+                    <img src="~/images/EarSense-Logo_Ward_face_transparent_background_05052021.png" width="120" class="d-inline-block align-middle mr-2" />
+                </a>
+                <a class="navbar-brand text-center" asp-area="" asp-page="/Index">
+                    <h1>Ear<i>Sense</i></h1>
+                    <p>Audiology &bull; Hearing Aids</p>
+                </a>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container" style="max-width: 1260px;">
+        <div class="d-flex justify-content-center">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - EarSense Audiology - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
