@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome.csproj": {}
+    "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome.csproj": {}
   },
   "projects": {
-    "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome.csproj": {
+    "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome.csproj",
+        "projectUniqueName": "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome.csproj",
         "projectName": "EarSense_Welcome",
-        "projectPath": "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome.csproj",
+        "projectPath": "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome.csproj",
         "packagesPath": "C:\\Users\\liamw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\obj\\",
+        "outputPath": "C:\\Users\\liamw\\OneDrive\\CodingProjects\\EarSense_Welcome\\EarSense_Welcome\\EarSense_Welcome\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.13.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[3.1.14, )"
