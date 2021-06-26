@@ -9,6 +9,7 @@ using EarSense_Welcome.Interfaces;
 using EarSense_Welcome.Services;
 using Microsoft.Extensions.Configuration;
 using EarSense_Welcome.Data;
+using System.IO;
 
 namespace EarSense_Welcome.Pages
 {
@@ -41,13 +42,7 @@ namespace EarSense_Welcome.Pages
             if (ModelState.IsValid)
             {
                 //Build message body
-                String body = "" +
-                    "<span>From: {0}</span>" +
-                    "<span>Message: {1}</span>" +
-                    "<span>Contact Information:</span>" +
-                    "<span>Address: {2}</span>" +
-                    "<span>Phone: {3}</span>" +
-                    "<span>Email: {4}</span>";
+                string body = System.IO.File.ReadAllText(@".\wwwroot\htmlTemplates\emailTemplate.html");
                 body = string.Format(body, Form.Name, Form.Message, Form.Address, Form.Phone, Form.Email);
                 await _emailService.sendMessageGmail(_config.GetValue<string>("EmailService:BusinessAddress"), Form.Subject, body);
                 return Page();
