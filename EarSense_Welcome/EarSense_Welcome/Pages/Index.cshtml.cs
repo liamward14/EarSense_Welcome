@@ -18,23 +18,24 @@ namespace EarSense_Welcome.Pages
         private readonly ILogger<IndexModel> _logger;
         private readonly IEmailService _emailService;
         private readonly IConfiguration _config;
+        public IMessageService _messenger;
 
         [BindProperty]
         public ContactForm Form { get; set; }
 
-        [BindProperty]
-        public bool valid { get; set; }
-
-        public IndexModel(ILogger<IndexModel> logger, IEmailService emailService, IConfiguration config)
+        public IndexModel(ILogger<IndexModel> logger,
+            IEmailService emailService,
+            IConfiguration config,
+            IMessageService messenger)
         {
             _logger = logger;
             _emailService = emailService;
             _config = config;
+            _messenger = messenger;
         }
 
-        public void OnGet([FromQuery] bool valid)
+        public void OnGet()
         {
-            this.valid = valid;
         }
 
         public async Task<IActionResult> OnPostContact()
@@ -45,7 +46,10 @@ namespace EarSense_Welcome.Pages
                 string body = System.IO.File.ReadAllText(@".\wwwroot\htmlTemplates\emailTemplate.html");
                 body = string.Format(body, Form.Name, Form.Message, Form.Address, Form.Phone, Form.Email);
                 await _emailService.sendMessageGmail(_config.GetValue<string>("EmailService:BusinessAddress"), Form.Subject, body);
-                return Page();
+                _messenger.Modal = true;
+                _messenger.Read = true;
+                _messenger.Message = "Your feedback has been submitted. Thank you!";
+                return RedirectToPage("/Index");
             }
             return Page();
 

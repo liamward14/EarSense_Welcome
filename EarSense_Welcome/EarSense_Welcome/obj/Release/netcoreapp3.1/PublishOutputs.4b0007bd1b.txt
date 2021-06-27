@@ -1,6 +1,7 @@
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\EarSense_Welcome.exe
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\site.css
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\favicon.ico
+C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\htmlTemplates\emailTemplate.html
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\EarSense-Logo_Ward_face_transparent_background_05052021.png
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\Front_Page.jpg
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\Signs-of-hearing-loss.png
@@ -9,6 +10,7 @@ C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSens
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\what is conductive hearing loss_Ward_2.jpg
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\js\Index.js
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\js\site.js
+C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\js\TriggerModal.js
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css

@@ -27,6 +27,7 @@ namespace EarSense_Welcome
         {
             services.AddRazorPages();
             services.AddSingleton<IEmailService, EmailService>();
+            services.AddSingleton<IMessageService, MessageService>(); //Same for every object and request (singleton)
 
         }
 

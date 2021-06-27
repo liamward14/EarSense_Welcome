@@ -39,33 +39,19 @@ namespace EarSense_Welcome.Services
             builder.HtmlBody = body;
             email.Body = builder.ToMessageBody();
 
-            Console.WriteLine("Getting from settings:");
-            Console.WriteLine(_config.GetValue<string>("EmailService:Credentials:Username"));
-            Console.WriteLine(_config.GetValue<string>("EmailService:Credentials:Password"));
-            /*
-            client.Host = _config.GetValue<string>("EmailService:Host");
-            client.UseDefaultCredentials = true;
-            client.Port = _config.GetValue<int>("EmailService:Port");
-            client.EnableSsl = true;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.Credentials = new NetworkCredential(
-                _config.GetValue<string>("EmailService:Credentials:Username"),
-                _config.GetValue<string>("EmailService:Credentials:Password"));
-            */
             using (var client = new SmtpClient())
             {
                 client.CheckCertificateRevocation = false;
-                Console.WriteLine("Host: " + _config.GetValue<string>("EmailService:Host"));
                 client.Connect(_config.GetValue<string>("EmailService:Host"), _config.GetValue<int>("EmailService:Port"), SecureSocketOptions.StartTlsWhenAvailable);
                 client.Authenticate(_config.GetValue<string>("EmailService:Credentials:Username"), _config.GetValue<string>("EmailService:Credentials:Password"));
                 try
                 {
                     await client.SendAsync(email);
-                    Console.WriteLine("Sent!");
+                    //Console.WriteLine("Sent!");
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Error: " + ex.Message);
+                    //Console.WriteLine("Error: " + ex.Message);
                 }
                 client.Disconnect(true);
             };

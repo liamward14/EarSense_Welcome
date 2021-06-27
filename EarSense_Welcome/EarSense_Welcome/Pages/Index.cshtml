@@ -4,7 +4,23 @@
     ViewData["Title"] = "Home page";
 }
 
-<div asp-validation-summary="All" class="text-danger" id="validationSummary"></div>
+@if (!ModelState.IsValid) { 
+<div class="row mb-3">
+    <div class="col-md-4 col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Email Issue:</h5>
+            </div>
+            <div class="card-body">
+                <p>We has a problem sending your email. See details below:</p>
+                <div asp-validation-summary="All" class="text-danger" id="validationSummary"></div>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <div class="row">
@@ -167,17 +183,42 @@
     </div>
 </div>
 
+<!-- Modal for displaying message-->
+<div class="modal fade" id="push" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-black-50" id="staticBackdropLabel">Notification</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-black-50">
+                <p><b>@Model._messenger.Message</b></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn bg-gold" data-dismiss="modal">Understood</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 @section Scripts{
     <script src="~/js/Index.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        //TODO
-        var validationhtml = $('#validationSummary').html();
-        console.log(validationhtml.indexOf('display:none'));
-        if (validationhtml.indexOf('display:none') == -1) { //validation shown
-            $(document).scrollTop($('#contactFormRow').position()["top"]);
-        }
-        //TODO: scroll to bottom based on error display
-    })
-</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var validationhtml = $('#validationSummary').html();
+            if (validationhtml == null) { return; }
+            console.log(validationhtml.indexOf('display:none'));
+            if (validationhtml.indexOf('display:none') == -1) { //validation shown
+                $(document).scrollTop($('#contactFormRow').position()["top"]);
+            }
+        })
+    </script>
+    @if (Model._messenger.Modal && Model._messenger.Read)
+    {
+        <script src="~/js/TriggerModal.js"></script>
+        @Model._messenger.Reset()
+    }
+
 }
