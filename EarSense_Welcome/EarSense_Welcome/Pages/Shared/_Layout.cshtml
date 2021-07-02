@@ -14,15 +14,24 @@
                 <a class="navbar-brand" asp-area="" asp-page="/Index">
                     <img src="~/images/EarSense-Logo_Ward_face_transparent_background_05052021.png" width="250" class="d-inline-block align-text-bottom" />
                 </a>
-                <a class="navbar-brand" asp-area="" asp-page="/Index">
+                <a class="navbar-brand" asp-area="" asp-page="/Index" id="titleAnchor">
                     <h1>Ear<i>Sense</i></h1>
-                    <p>Audiology &bull; Hearing Aids</p>
+                    <h4>Audiology &bull; Hearing Aids</h4>
                 </a>
+                <a class="navbar-brand text-white" id="addressContainer">
+                    <span><b>147 Hunter Street East</b>,</span>
+                    <br />
+                    <span>Peterborough, Ontario,</span>
+                    <br />
+                    <span>K9H 1G7</span>
+
+                </a>
+
                 <!--Fake text for spacing-->
-                <a class="navbar-brand" style="color: #3e3f3a; pointer-events: none;" asp-area="" asp-page="">
+                <!--<a class="navbar-brand" style="color: #3e3f3a; pointer-events: none;" asp-area="" asp-page="">
                     <h1>Ear<i>Sense</i></h1>
                     <p>Audiology &bull; Hearing Aids</p>
-                </a>
+                </a>-->
 
             </div>
 
@@ -43,11 +52,10 @@
             &copy; 2021 - EarSense Audiology - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <script src="~/js/Index.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

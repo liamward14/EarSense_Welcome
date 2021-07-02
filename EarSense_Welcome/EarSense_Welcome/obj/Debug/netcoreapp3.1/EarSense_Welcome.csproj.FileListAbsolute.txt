@@ -706,4 +706,3 @@ C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSens
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Debug\netcoreapp3.1\EarSense_Welcome.dll
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Debug\netcoreapp3.1\EarSense_Welcome.pdb
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Debug\netcoreapp3.1\EarSense_Welcome.genruntimeconfig.cache
-C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Debug\netcoreapp3.1\EarSense_Welcome.csprojAssemblyReference.cache

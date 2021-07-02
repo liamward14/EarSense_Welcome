@@ -4,20 +4,21 @@
     ViewData["Title"] = "Home page";
 }
 
-@if (!ModelState.IsValid) { 
-<div class="row mb-3">
-    <div class="col-md-4 col-12">
-        <div class="card">
-            <div class="card-header">
-                <h5>Email Issue:</h5>
-            </div>
-            <div class="card-body">
-                <p>We has a problem sending your email. See details below:</p>
-                <div asp-validation-summary="All" class="text-danger" id="validationSummary"></div>
+@if (!ModelState.IsValid)
+{
+    <div class="row mb-3">
+        <div class="col-md-4 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Email Issue:</h5>
+                </div>
+                <div class="card-body">
+                    <p>We has a problem sending your email. See details below:</p>
+                    <div asp-validation-summary="All" class="text-danger" id="validationSummary"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 }
 
 
@@ -172,6 +173,10 @@
 
             </div>
         </div>
+
+        <!--Script needs to go here to ignore google maps api warning and actually run-->
+        <script src="~/js/Index.js"></script>
+
         <!--<div id="map"></div>-->
         <!--Added the embedded maps api for now (as opposed to javascript API) because it is free-->
         <iframe style="width: 100%; border: solid; border-width: 2px;" , id="map"
@@ -204,17 +209,6 @@
 </div>
 
 @section Scripts{
-    <script src="~/js/Index.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var validationhtml = $('#validationSummary').html();
-            if (validationhtml == null) { return; }
-            console.log(validationhtml.indexOf('display:none'));
-            if (validationhtml.indexOf('display:none') == -1) { //validation shown
-                $(document).scrollTop($('#contactFormRow').position()["top"]);
-            }
-        })
-    </script>
     @if (Model._messenger.Modal && Model._messenger.Read)
     {
         <script src="~/js/TriggerModal.js"></script>
