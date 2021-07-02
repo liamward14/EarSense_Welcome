@@ -94,3 +94,9 @@ body {
 .xl-font{
     font-size: x-large;
 }
+
+.flex-fill{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

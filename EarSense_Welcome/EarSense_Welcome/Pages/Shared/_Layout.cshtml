@@ -10,16 +10,24 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary box-shadow mb-3">
-            <div class="container d-flex justify-content-center">
+            <div class="container-fluid justify-content-between">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">
-                    <img src="~/images/EarSense-Logo_Ward_face_transparent_background_05052021.png" width="120" class="d-inline-block align-middle mr-2" />
+                    <img src="~/images/EarSense-Logo_Ward_face_transparent_background_05052021.png" width="250" class="d-inline-block align-text-bottom" />
                 </a>
-                <a class="navbar-brand text-center" asp-area="" asp-page="/Index">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">
+                    <h1>Ear<i>Sense</i></h1>
+                    <p>Audiology &bull; Hearing Aids</p>
+                </a>
+                <!--Fake text for spacing-->
+                <a class="navbar-brand" style="color: #3e3f3a; pointer-events: none;" asp-area="" asp-page="">
                     <h1>Ear<i>Sense</i></h1>
                     <p>Audiology &bull; Hearing Aids</p>
                 </a>
 
             </div>
+
+
+
         </nav>
     </header>
     <div class="container" style="max-width: 1260px;">
