@@ -16,7 +16,7 @@ function dealWithValidation() {
 
 function dealWithNavSpacing() {
     //Set spacing
-    $('#addressContainer').width($('#titleAnchor').width());
+    $('#addressContainer').width($('#navbarimg').width());
 }
 
 //Handle resize event
@@ -24,6 +24,6 @@ $(document).ready(function () {
    // setDynamicSize();
 
     dealWithValidation();
-    dealWithNavSpacing();
+    //dealWithNavSpacing();
 
 });

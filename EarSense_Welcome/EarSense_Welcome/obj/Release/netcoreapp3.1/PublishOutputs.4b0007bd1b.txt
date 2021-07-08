@@ -2,7 +2,9 @@ C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSens
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\css\site.css
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\favicon.ico
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\htmlTemplates\emailTemplate.html
+C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\EarSense-Logo_Ward_11232020_JAK30_transparent_background_white_letters_Rev2_07062021.png
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\EarSense-Logo_Ward_face_transparent_background_05052021.png
+C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\earsenselogo2.png
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\Front_Page.jpg
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\Signs-of-hearing-loss.png
 C:\Users\liamw\OneDrive\CodingProjects\EarSense_Welcome\EarSense_Welcome\EarSense_Welcome\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\images\Stephen_Ward_23.png
